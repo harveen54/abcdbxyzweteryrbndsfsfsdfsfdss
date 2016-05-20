@@ -1,0 +1,53 @@
+ class Padding
+    {
+        private int? _top;
+        private int? _bottom;
+        private int? _left;
+        private int? _right;
+        private string _html;
+
+        public int Html
+        {
+            get {
+                StringBuilder padding;
+                if(_top!=null)
+                   padding.Append("padding-top:"+_top+"px;";
+                if(_bottom !=null)
+                    padding.Append("padding-bottom:"+_bottom+"px;");
+                if(_left!=null)
+                    padding.Append("padding-left:"+_left+"px;");
+                if(_right!=null)
+                    padding.Append("padding-right:"+_right+"px;");
+
+                _html= padding!=null?padding.ToString():null;
+
+                return _html;
+            }
+            set { _html = value; }
+        }
+
+        public int Right
+        {
+            get { return _right; }
+            set { _right = value; }
+        }
+
+        public int Left
+        {
+            get { return _left; }
+            set { _left = value; }
+        }
+        public int Top
+        {
+            get { return _top; }
+            set { _top = value; }
+        }
+
+        public int Bottom
+        {
+            get { return _bottom; }
+            set { _bottom = value; }
+        }
+
+
+    }
