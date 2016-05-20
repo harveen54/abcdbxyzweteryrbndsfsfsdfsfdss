@@ -1,0 +1,11 @@
+class AdiText
+    {
+        private Padding _padding;
+
+        public Padding Padding
+        {
+            get { return _padding; }
+            set { _padding = value; }
+        }
+
+    }
